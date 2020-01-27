@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/register"
+        android:scaleType="centerCrop"
+
+        >
+    </FrameLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/acc"
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+        <customfonts.MyEditText
+            android:id="@+id/txtUsername"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:layout_marginLeft="46dp"
+            android:maxLength="12"
+            android:background="#0000"
+            android:padding="16dp"
+            android:gravity="left"
+            />
+        <customfonts.MyEditText
+            android:id="@+id/txtEmail"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:layout_marginLeft="46dp"
+            android:maxLength="50"
+            android:background="#0000"
+            android:padding="16dp"
+            android:gravity="left"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginLeft="56dp"
+            android:layout_marginRight="56dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:background="#dad8d8"/>
+
+        <customfonts.MyEditText
+            android:id="@+id/txtPassword"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:layout_marginLeft="46dp"
+            android:layout_marginRight="46dp"
+            android:background="#0000"
+            android:padding="16dp"
+            android:inputType="textPassword"
+            android:drawableRight="@drawable/eye"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginLeft="56dp"
+            android:layout_marginRight="56dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="25dp"
+            android:background="#dad8d8"/>
+
+
+
+
+
+        <Button
+
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2b73e1"
+            android:text="Daftar"
+            android:textSize="16dp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="120dp"
+            android:padding="9dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="25dp"
+
+
+
+            />
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:visibility="invisible"
+            android:id="@+id/progressSignUp"
+            android:layout_alignParentBottom="true"
+            />
+
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/acc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sudah punya Akun?"
+        android:fontFamily="@font/work_sans"
+        android:layout_above="@+id/create"
+        android:gravity="center"
+        android:lines="1"
+
+        />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/txtMasuk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masuk disini"
+        android:fontFamily="@font/work_sans"
+        android:textColor="#2b73e1"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:lines="1"
+        android:layout_marginBottom="22dp"
+        />
+
+
+
+
+
+</LinearLayout>
+
+
+
+</RelativeLayout>
